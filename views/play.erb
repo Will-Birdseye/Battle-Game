@@ -1,6 +1,6 @@
-<%= @player_1.name %> vs. <%= @player_2.name %>
+<%= $game.find_player_1.name %> vs. <%= $game.find_player_2.name %>
 
-<%= @player_2.name %>: <%= @player_2.hit_points %>HP
+<%= $game.find_player_2.name %>: <%= $game.find_player_2.hit_points %>HP
 
 <form action="/attack">
   <input type="submit" value="Attack">
