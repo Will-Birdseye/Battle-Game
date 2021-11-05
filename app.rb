@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
-require './lib/player'
+require '/Users/will/Projects/Battle-Game/lib/player.rb'
 
 class Battle < Sinatra::Base
   enable :sessions
@@ -20,11 +20,8 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-<<<<<<< HEAD
     @player_1_name = $player_1.name
     @player_2_name = $player_2.name
-=======
->>>>>>> 14f5411bb607a29218183073f6f8055268c32d7f
     @player_1 = $player_1
     @player_2 = $player_2
     erb :play
