@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the player' do
-      expect(deimos).to receive(:receive_damage)
-      teffox.attack(deimos)
-    end
-  end
-
   describe '#receive_damage' do
     it 'reduces the player hit points' do
       expect { teffox.receive_damage }.to change { teffox.hit_points }.by(-10)
