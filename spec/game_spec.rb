@@ -1,5 +1,5 @@
-require '/Users/will/Projects/Battle-Game/lib/game.rb'
-require '/Users/will/Projects/Battle-Game/lib/player.rb'
+require 'game'
+require 'player'
 
 describe Game do
   subject(:teffox) { Game.new }

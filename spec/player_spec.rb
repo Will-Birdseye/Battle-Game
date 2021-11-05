@@ -1,4 +1,4 @@
-require '/Users/will/Projects/Battle-Game/lib/player.rb'
+require 'player'
 
 describe Player do
   subject(:teffox) { Player.new('Teffox') }
